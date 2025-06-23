@@ -77,7 +77,7 @@ DeviceLogonEvents
 ![analyticrulecreation6](https://github.com/user-attachments/assets/ae021b2e-0c12-4117-a39b-960baa895c98)
 
 
-#### 📊 Analysis
+### 📊 Analysis
 A brute force detection rule in Microsoft Sentinel flagged multiple failed login attempts originating from two distinct public IP addresses. These were targeting two separate virtual machines in our environment:
 
 | Remote IP      | Target VM      | Failed Logons |
@@ -86,6 +86,7 @@ A brute force detection rule in Microsoft Sentinel flagged multiple failed login
 | 103.159.255.76 | hercules-soc   | 40            |
 
 
+## 3. Investigation
 #### ✅ Verification of Access Attempts
 A follow-up query was used to verify whether any of the suspicious IP addresses had successful logins:
 
@@ -99,8 +100,14 @@ DeviceLogonEvents
 #### Result:
 🔒 No successful logins were observed from the flagged IP addresses.
 
+#### Incident Activity Log:
 
-## Containment Actions Taken
+![analyticrulecreation9](https://github.com/user-attachments/assets/27ec9ba3-4c1b-4f9c-9bee-eb0107635b36)
+
+![analyticrulecreation10](https://github.com/user-attachments/assets/6f0f979b-95a5-4717-80e3-ac65a15a17ae)
+
+
+## 4. Containment Actions Taken
 ### Isolated Devices:
 Both panbear-2nd-vm and hercules-soc were isolated in Microsoft Defender for Endpoint (MDE) to prevent further compromise.
 
