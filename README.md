@@ -98,3 +98,20 @@ DeviceLogonEvents
 
 #### Result:
 🔒 No successful logins were observed from the flagged IP addresses.
+
+
+## Containment Actions Taken
+### Isolated Devices:
+Both panbear-2nd-vm and hercules-soc were isolated in Microsoft Defender for Endpoint (MDE) to prevent further compromise.
+
+###  Malware Scan:
+A full anti-malware scan was initiated and completed on both VMs using MDE.
+
+###  NSG Lockdown:
+Network Security Group (NSG) rules were updated:
+RDP access from the public internet was blocked.
+Only the investigator’s home IP is currently allowed RDP access.
+A Bastion host was proposed as a more secure alternative for future access.
+
+### Policy Recommendation:
+A recommendation has been submitted to enforce restricted RDP access for all virtual machines across the environment.
