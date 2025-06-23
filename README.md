@@ -31,9 +31,9 @@ Identify and analyze potential brute-force logon attempts across the environment
 
 
 ## 1. Summary
-Date of Notes: June 21, 2025 < br />
-Incident Type: Brute-Force Logon Attempts < br />
-Status: Contained < br />
+Date of Notes: June 21, 2025 <br />
+Incident Type: Brute-Force Logon Attempts <br />
+Status: Contained <br />
 
 
 ## 2. Initial Detection & Analysis
