@@ -94,7 +94,7 @@ DeviceLogonEvents
 #### Result:
 🔒 No successful logins were observed from the flagged IP addresses.
 
-#### Incident Activity Log:
+#### Update Microsoft Sentinel Incidents Activity Log:
 
 ![analyticrulecreation9](https://github.com/user-attachments/assets/27ec9ba3-4c1b-4f9c-9bee-eb0107635b36)
 
