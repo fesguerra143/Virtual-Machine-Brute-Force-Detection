@@ -50,6 +50,8 @@ DeviceLogonEvents
 ```
 ![loganalytics1](https://github.com/user-attachments/assets/0bebfefd-9528-4265-adc0-0e091d19dbc6)
 
+<img width="600" src="https://github.com/user-attachments/assets/0bebfefd-9528-4265-adc0-0e091d19dbc6" />
+
 ### Microsoft Sentinel: Configuration → Analytics Rule Creation
 #### General Settings:
 ![analyticrulecreation1](https://github.com/user-attachments/assets/6c5e6703-b27d-474c-ad29-b778f9670970)
