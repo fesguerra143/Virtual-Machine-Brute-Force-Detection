@@ -70,13 +70,31 @@ DeviceLogonEvents
 ![analyticrulecreation4](https://github.com/user-attachments/assets/282d098e-0d13-44c4-9072-fc3fcbb969ef)
 
 
-
 ### Microsoft Sentinel: Threat Management → Incidents
 
-
 ![analyticrulecreation5](https://github.com/user-attachments/assets/ebabf39d-2aef-44cb-865f-a4dcaefaab79)
-
 
 ![analyticrulecreation6](https://github.com/user-attachments/assets/ae021b2e-0c12-4117-a39b-960baa895c98)
 
 
+#### 📊 Analysis
+A brute force detection rule in Microsoft Sentinel flagged multiple failed login attempts originating from two distinct public IP addresses. These were targeting two separate virtual machines in our environment:
+
+| Remote IP      | Target VM      | Failed Logons |
+| -------------- | -------------- | ------------- |
+| 27.124.47.210  | panbear-2nd-vm | 26            |
+| 103.159.255.76 | hercules-soc   | 40            |
+
+
+#### ✅ Verification of Access Attempts
+A follow-up query was used to verify whether any of the suspicious IP addresses had successful logins:
+
+```kql
+DeviceLogonEvents
+| where RemoteIP in ("27.124.47.210", "103.159.255.76")
+| where ActionType != "LogonFailed"
+```
+![analyticrulecreation7](https://github.com/user-attachments/assets/4136541e-8f34-4b73-96c5-6739739fbed9)
+
+#### Result:
+🔒 No successful logins were observed from the flagged IP addresses.
