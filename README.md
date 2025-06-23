@@ -50,3 +50,20 @@ DeviceLogonEvents
 ```
 ![loganalytics1](https://github.com/user-attachments/assets/0bebfefd-9528-4265-adc0-0e091d19dbc6)
 
+### Microsoft Sentinel – Analytics Rule Creation
+#### General Settings
+![analyticrulecreation1](https://github.com/user-attachments/assets/6c5e6703-b27d-474c-ad29-b778f9670970)
+
+#### Set rule logic Settings
+![analyticrulecreation2](https://github.com/user-attachments/assets/d5f943cc-c7f0-4264-92bb-993c3b4f903d)
+
+#### Incident Settings
+
+![analyticrulecreation3](https://github.com/user-attachments/assets/01a56ba6-c909-423b-9778-ce9994960127)
+
+
+#### Review and Create
+![analyticrulecreation4](https://github.com/user-attachments/assets/282d098e-0d13-44c4-9072-fc3fcbb969ef)
+
+
+
