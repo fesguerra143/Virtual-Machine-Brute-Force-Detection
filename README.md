@@ -1,16 +1,16 @@
 
 
-# Zero-Day Ransomware (PwnCrypt) Outbreak Project 
-## 🛡️ Incident Report: PwnCrypt Ransomware Detection and Containment
+# Virtual Machine Brute Force Detection 
+## 🛡️ Incident Response: Brute-Force Attempts Detected
 
 # Objective:
-Identify any suspicious zero-day PwnCrypt ransomware infection, isolate the affected system, and prevent lateral movement within the corporate network.
+Identify and analyze potential brute-force logon attempts across the environment.
 
 ---
 # Tools & Technology:
 - Azure Virtual Machine
-- PowerShell 
-- Microsoft Defender
+- Microsoft Sentinel
+- Log Analytics Workspace
 - KQL Query
 
 ---
