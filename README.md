@@ -17,15 +17,9 @@ Identify and analyze potential brute-force logon attempts across the environment
 # Table of contents
 
 - [1. Summary](#1-summary)
-- [2. Preparation](#2-preparation)
-- [3. Data Collection](#3-data-collection)
-- [4. Data Analysis](#4-data-analysis)
-- [5. Investigation](#5-investigation)
-- [6. Response](#6-response)
-- [7. MITRE ATT&CK Mapping](#7-mitre-attck-mapping)
-- [8. Lessons Learned / Improvement:](#8-lessons-learned--improvement)
-- [9. Final Status](#9-final-status)
-  
+- [2. Initial Detection & Analysis](#2-initial-detection--analysis)
+- [3. Investigation](#3-investigation)
+- [4. Containment Actions Taken](#4-containment-actions-taken)
 ---
 
 
