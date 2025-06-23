@@ -40,6 +40,17 @@ Status: Contained <br />
 ### Methodology:
 An analytics rule (potentially in Microsoft Sentinel) was configured to detect a high volume of failed logon attempts. The following Kusto Query Language (KQL) query was utilized to identify devices experiencing a significant number of LogonFailed events within a 5-hour window:
 
+
+
+### Microsoft Sentinel: Configuration → Analytics Rule Creation
+#### General Settings:
+![analyticrulecreation1](https://github.com/user-attachments/assets/6c5e6703-b27d-474c-ad29-b778f9670970)
+
+#### Set rule logic Settings:
+![analyticrulecreation2](https://github.com/user-attachments/assets/d5f943cc-c7f0-4264-92bb-993c3b4f903d)
+
+##### Rule logic Testing using Log Analytics Workspace
+
 ```kql
 DeviceLogonEvents
 | where TimeGenerated >= ago(5h)
@@ -50,15 +61,6 @@ DeviceLogonEvents
 ```
 ![loganalytics1](https://github.com/user-attachments/assets/0bebfefd-9528-4265-adc0-0e091d19dbc6)
 
-<img width="600" src="https://github.com/user-attachments/assets/0bebfefd-9528-4265-adc0-0e091d19dbc6" />
-
-### Microsoft Sentinel: Configuration → Analytics Rule Creation
-#### General Settings:
-![analyticrulecreation1](https://github.com/user-attachments/assets/6c5e6703-b27d-474c-ad29-b778f9670970)
-
-#### Set rule logic Settings:
-![analyticrulecreation2](https://github.com/user-attachments/assets/d5f943cc-c7f0-4264-92bb-993c3b4f903d)
-
 #### Incident Settings:
 
 ![analyticrulecreation3](https://github.com/user-attachments/assets/01a56ba6-c909-423b-9778-ce9994960127)
@@ -67,5 +69,14 @@ DeviceLogonEvents
 #### Review and Create: 
 ![analyticrulecreation4](https://github.com/user-attachments/assets/282d098e-0d13-44c4-9072-fc3fcbb969ef)
 
+
+
 ### Microsoft Sentinel: Threat Management → Incidents
+
+
+![analyticrulecreation5](https://github.com/user-attachments/assets/ebabf39d-2aef-44cb-865f-a4dcaefaab79)
+
+
+![analyticrulecreation6](https://github.com/user-attachments/assets/ae021b2e-0c12-4117-a39b-960baa895c98)
+
 
